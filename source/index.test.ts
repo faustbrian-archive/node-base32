@@ -1,9 +1,9 @@
 import { decode, encode } from "./index";
 
 test("#encode", () => {
-  expect(encode("f")).toStrictEqual("MY======");
+  expect(encode("f")).toStrictEqual("my");
 });
 
 test("#decode", () => {
-  expect(decode("MY======").toString("utf8")).toStrictEqual("f");
+  expect(decode("my").toString("utf8")).toStrictEqual("f");
 });
